@@ -16,5 +16,5 @@ class ::ApplicationController
 			end
 		end
   end
-  singleton_class.prepend NoAutoLoginRedirectToLogin
+  prepend NoAutoLoginRedirectToLogin
 end
