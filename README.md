@@ -1,0 +1,1 @@
+# discourse-no-auto-login
