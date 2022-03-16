@@ -4,17 +4,17 @@
 # authors: Jim Kleiber
 # url: https://github.com/jimkleiber/discourse-no-auto-login
 
-enabled_site_setting :no_auto_login_enabled
+# enabled_site_setting :no_auto_login_enabled
 
-class ::ApplicationController
-  module NoAutoLoginRedirectToLogin
-		def redirect_to_login
-			if SiteSetting.no_auto_login_enabled
-				dont_cache_page
-				cookies[:destination_url] = destination_url
-				redirect_to path("/login")
-			end
-		end
-  end
-  prepend NoAutoLoginRedirectToLogin
-end
+# class ::ApplicationController
+#   module NoAutoLoginRedirectToLogin
+# 		def redirect_to_login
+# 			if SiteSetting.no_auto_login_enabled
+# 				dont_cache_page
+# 				cookies[:destination_url] = destination_url
+# 				redirect_to path("/login")
+# 			end
+# 		end
+#   end
+#   prepend NoAutoLoginRedirectToLogin
+# end
