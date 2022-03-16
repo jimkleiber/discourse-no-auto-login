@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    no_auto_login_enabled: "Disable auto-login if one ID provider?"
