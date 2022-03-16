@@ -9,7 +9,7 @@ enabled_site_setting :no_auto_login_enabled
 class ::ApplicationController
   module NoAutoLoginRedirectToLogin
 		def redirect_to_login
-			if SiteSetting.awesomeness_enabled
+			if SiteSetting.no_auto_login_enabled
 				dont_cache_page
 				cookies[:destination_url] = destination_url
 				redirect_to path("/login")
