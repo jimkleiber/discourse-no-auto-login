@@ -6,8 +6,8 @@
 
 enabled_site_setting :no_auto_login_enabled
 
-after_initialize do
- 	if SiteSetting.no_auto_login_enabled	
+# after_initialize do
+#  	if SiteSetting.no_auto_login_enabled	
 		class ::ApplicationController
 		  module NoAutoLoginRedirectToLogin
 			def redirect_to_login
@@ -18,5 +18,5 @@ after_initialize do
 		  end	
 		  prepend NoAutoLoginRedirectToLogin
 		end
-	end
-end
+# 	end
+# end
